@@ -231,12 +231,11 @@
         this.elements = elements;
         this.time_between_characters = time_between_characters;
         this.dellay_between_words = dellay_between_words;
+        this.cursor_is_visible = false;
       }
 
       TypeWriter.prototype.type = function(){
-
         this.addWord(0);
-
       }
 
       TypeWriter.prototype.addWord = function(index){
@@ -251,7 +250,6 @@
       TypeWriter.prototype.addChar = function(index, i){
         if(this.elements[index].innerText.length <= this.content[index].length){
           setTimeout(()=>{
-            console.log(this.elements[index].innerText);
             if(this.content[index].charAt(i) === ' '){
               this.elements[index].innerText = this.elements[index].innerText + '\u00A0';
               this.elements[index].classList.add('cursor');
@@ -262,10 +260,28 @@
               this.addChar(index, i+1);
             }
           }, this.time_between_characters);
-        }else if(index < this.elements.length){
+        }else if(index < this.elements.length && this.elements[index+1] !== undefined){
           this.elements[index].classList.remove('cursor');
           this.elements[index+1].classList.add('cursor');
           this.addWord(index+1);
+        }else{
+          this.toggleCursor(this.elements[index]);
+        }
+      }
+
+      TypeWriter.prototype.toggleCursor = function(element){
+        if(this.cursor_is_visible){
+          setTimeout(()=>{
+            element.classList.remove('cursor');
+            this.cursor_is_visible = false;
+            this.toggleCursor(element);
+          }, 500);
+        }else{
+          setTimeout(()=>{
+            element.classList.add('cursor');
+            this.cursor_is_visible = true;
+            this.toggleCursor(element);
+          }, 500);
         }
       }
 
