@@ -15,10 +15,10 @@
     body {
       font-family: 'Raleway', sans-serif;
       font-style: italic;
-      background: #000 url('./personal-background.jpg') no-repeat center center / cover;
       color: #ccc;
       overflow-x: hidden;
       background-size: 100% 100%;
+      background-color: #000;
     }
     h1 {
       font-size: 7vw;
@@ -48,12 +48,21 @@
     #personal-image {
       position: fixed;
       top: 2rem;
-      right: 3rem;
-      width: 20vw;
-      height: 28vw;
+      right: 6rem;
+      width: 11vw;
+      height: 16vw;
       border: 0 solid #222;
       border-radius: 20px;
       box-shadow: 0 0 2rem 1rem #222;
+    }
+    #background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 80vh;
+      z-index: -1;
+      filter: blur(1.6px);
     }
     .fa {
       font-size: 5vw;
@@ -72,6 +81,7 @@
 <body>
 
   <img id="personal-image" src="./marto.jpg" alt="Martin Nikolov-web developer">
+  <img id="background-image" src="./personal-background.jpg" alt="Martin Nikolov-web developer">
 
   <div class="container-fluid">
 
@@ -101,13 +111,13 @@
           <li data-writter-9>&nbsp;</li>
           <li data-writter-10>&nbsp;</li>
           <li data-writter-11>&nbsp;</li>
+          <li data-writter-12>&nbsp;</li>
         </ul>
       </div>
 
       <div class="col-3">
-        <h3 class="border-bottom text-center terminal" data-writter-12>&nbsp;</h3>
+        <h3 class="border-bottom text-center terminal" data-writter-13>&nbsp;</h3>
         <ul class="terminal">
-          <li data-writter-13>&nbsp;</li>
           <li data-writter-14>&nbsp;</li>
           <li data-writter-15>&nbsp;</li>
           <li data-writter-16>&nbsp;</li>
@@ -119,17 +129,18 @@
           <li data-writter-22>&nbsp;</li>
           <li data-writter-23>&nbsp;</li>
           <li data-writter-24>&nbsp;</li>
+          <li data-writter-25>&nbsp;</li>
         </ul>
       </div>
 
       <div class="col-3">
-        <h3 class="border-bottom text-center terminal" data-writter-25>&nbsp;</h3>
+        <h3 class="border-bottom text-center terminal" data-writter-26>&nbsp;</h3>
         <ul class="terminal">
-          <li data-writter-26>&nbsp;</li>
           <li data-writter-27>&nbsp;</li>
           <li data-writter-28>&nbsp;</li>
           <li data-writter-29>&nbsp;</li>
           <li data-writter-30>&nbsp;</li>
+          <li data-writter-31>&nbsp;</li>
         </ul>
       </div>
 
@@ -147,16 +158,17 @@
       const content = [
         'Full-Stack Web Developer',
         'Skills:',
-        '- Starting to develop',
-        ' at December 2015.',
-        '- Team player developer.',
+        '- Developer since 2015.',
+        '- Affinity for learning.',
+        '- Great team player.',
         '- Good understanding of',
-        ' Design Patherns.',
+        ' design patterns.',
         '- Favorite OS:',
         ' linux(ubuntu-16).',
-        '- Fallowing best practices',
+        '- Following best practices',
         '(S.O.L.I.D, KISS, etc... ).',
         '- TDD.',
+        '- GIT workflow.',
         'Favorite technologies:',
         '- Apache2.',
         '- MySQL.',
@@ -209,7 +221,8 @@
         document.querySelectorAll('[data-writter-27]')[0],
         document.querySelectorAll('[data-writter-28]')[0],
         document.querySelectorAll('[data-writter-29]')[0],
-        document.querySelectorAll('[data-writter-30]')[0]
+        document.querySelectorAll('[data-writter-30]')[0],
+        document.querySelectorAll('[data-writter-31]')[0]
       ];
 
       const TypeWriter = function(content, elements, time_between_characters, dellay_between_words){
