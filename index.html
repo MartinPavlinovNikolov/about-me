@@ -32,13 +32,13 @@
       color: #ccc;
     }
     h2 {
-      font-size: 2.6vw;
+      font-size: 2.6vmax;
     }
     h3 {
-      font-size: 1.6vw;
+      font-size: 1.6vmax;
     }
     li {
-      font-size: 1.2vw;
+      font-size: 1.2vmax;
       list-style: none;
     }
     .cursor::after {
@@ -49,8 +49,8 @@
       position: fixed;
       top: 2rem;
       right: 6rem;
-      width: 11vw;
-      height: 16vw;
+      width: 8vmax;
+      height: 10vmax;
       border: 0 solid #222;
       border-radius: 20px;
       box-shadow: 0 0 2rem 1rem #222;
@@ -59,12 +59,15 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 80vh;
+      width: 100vmax;
+      height: 80vmin;
       z-index: -1;
       filter: blur(1.6px);
     }
-    .fa {
+    .fa, .mb-5 {
+      font-size: 3rem;
+    }
+    .github-o {
       font-size: 5vw;
     }
     .footer {
@@ -73,8 +76,15 @@
       left: 0;
       right: 0;
     }
-    .terminal {
+    .small-terminal, .big-terminal {
       background-color: #00000080;
+      padding: 1vw;
+    }
+    .small-terminal {
+      min-height: 4vh;
+    }
+    .big-terminal {
+      min-height: 40vh;
     }
   </style>
 </head>
@@ -87,20 +97,20 @@
 
     <div class="row">
       <div class="col-9">
-        <h1 class="text-center mt-5"><a href="https://github.com/MartinPavlinovNikolov">Martin Nik<i class="fa fa-github"></i>lov</a></h1>
+        <h1 class="text-center mt-5"><a href="https://github.com/MartinPavlinovNikolov">Martin Nik<i class="fa fa-github github-o"></i>lov</a></h1>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-9">
+      <div class="col-12">
         <h2 class="text-center" data-writter-0>&nbsp;</h2>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-3">
-        <h3 class="border-bottom text-center terminal" data-writter-1>&nbsp;</h3>
-        <ul class="terminal">
+      <div class="col-4">
+        <h3 class="border-bottom text-center small-terminal" data-writter-1>&nbsp;</h3>
+        <ul class="big-terminal">
           <li data-writter-2>&nbsp;</li>
           <li data-writter-3>&nbsp;</li>
           <li data-writter-4>&nbsp;</li>
@@ -115,9 +125,9 @@
         </ul>
       </div>
 
-      <div class="col-3">
-        <h3 class="border-bottom text-center terminal" data-writter-13>&nbsp;</h3>
-        <ul class="terminal">
+      <div class="col-4">
+        <h3 class="border-bottom text-center small-terminal" data-writter-13>&nbsp;</h3>
+        <ul class="big-terminal">
           <li data-writter-14>&nbsp;</li>
           <li data-writter-15>&nbsp;</li>
           <li data-writter-16>&nbsp;</li>
@@ -133,9 +143,9 @@
         </ul>
       </div>
 
-      <div class="col-3">
-        <h3 class="border-bottom text-center terminal" data-writter-26>&nbsp;</h3>
-        <ul class="terminal">
+      <div class="col-4">
+        <h3 class="border-bottom text-center small-terminal" data-writter-26>&nbsp;</h3>
+        <ul class="big-terminal">
           <li data-writter-27>&nbsp;</li>
           <li data-writter-28>&nbsp;</li>
           <li data-writter-29>&nbsp;</li>
@@ -147,10 +157,10 @@
     </div>
 
     <div class="row footer">
-      <div class="col text-center mb-3"><a href="https://www.facebook.com/azzonlipro"><i class="fa fa-facebook"></i><br>facebook.com/Martin_Nikolov</a></div>
-      <div class="col text-center mb-3"><a href="mailto:Martin_Nikolov.89@abv.bg"><i class="fa fa-envelope"></i><br>Martin_Nikolov.89@abv.bg</a></div>
-      <div class="col text-center mb-3"><a href="https://github.com/MartinPavlinovNikolov"><i class="fa fa-github"></i><br>github.com/MartinPavlinovNikolov</a></div>
-      <div class="col text-center mb-3"><a href="https://linkedin.com/in/martin-nikolov-8a4823165"><i class="fa fa-linkedin"></i><br>Martin Pavlinov Nikolov</a></div>
+      <div class="col-3 text-center mb-3"><a href="https://www.facebook.com/azzonlipro"><i class="fa fa-facebook"></i></a></div>
+      <div class="col-3 text-center mb-3"><a href="mailto:Martin_Nikolov.89@abv.bg"><i class="fa fa-envelope"></i></a></div>
+      <div class="col-3 text-center mb-3"><a href="https://github.com/MartinPavlinovNikolov"><i class="fa fa-github"></i></a></div>
+      <div class="col-3 text-center mb-3"><a href="https://linkedin.com/in/martin-nikolov-8a4823165"><i class="fa fa-linkedin"></i></a></div>
     </div>
 
   </div>
