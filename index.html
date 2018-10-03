@@ -57,7 +57,7 @@
       box-shadow: 0 0 2rem 1rem #222;
     }
     .fa-github {
-      font-size: 6vw;
+      font-size: 5vw;
     }
   </style>
 </head>
@@ -108,17 +108,20 @@
           <li data-writter-19>&nbsp;</li>
           <li data-writter-20>&nbsp;</li>
           <li data-writter-21>&nbsp;</li>
+          <li data-writter-22>&nbsp;</li>
+          <li data-writter-23>&nbsp;</li>
+          <li data-writter-24>&nbsp;</li>
         </ul>
       </div>
 
       <div class="col-3">
-        <h3 class="border-bottom text-center" data-writter-22>&nbsp;</h3>
+        <h3 class="border-bottom text-center" data-writter-25>&nbsp;</h3>
         <ul>
-          <li data-writter-23>&nbsp;</li>
-          <li data-writter-24>&nbsp;</li>
-          <li data-writter-25>&nbsp;</li>
           <li data-writter-26>&nbsp;</li>
           <li data-writter-27>&nbsp;</li>
+          <li data-writter-28>&nbsp;</li>
+          <li data-writter-29>&nbsp;</li>
+          <li data-writter-30>&nbsp;</li>
         </ul>
       </div>
 
@@ -143,8 +146,11 @@
         'Favorite technologies:',
         '- Apache2.',
         '- MySQL.',
+        '- composer.',
         '- js.',
         '- es6.',
+        '- NODE.',
+        '- npm.',
         '- php5.',
         '- php7.',
         '- HTML.',
@@ -186,7 +192,10 @@
         document.querySelectorAll('[data-writter-24]')[0],
         document.querySelectorAll('[data-writter-25]')[0],
         document.querySelectorAll('[data-writter-26]')[0],
-        document.querySelectorAll('[data-writter-27]')[0]
+        document.querySelectorAll('[data-writter-27]')[0],
+        document.querySelectorAll('[data-writter-28]')[0],
+        document.querySelectorAll('[data-writter-29]')[0],
+        document.querySelectorAll('[data-writter-30]')[0]
       ];
 
       const TypeWriter = function(content, elements, time_between_characters, dellay_between_words){
@@ -232,7 +241,7 @@
         }
       }
 
-      const tr = new TypeWriter(content, elements, 50, 100);
+      const tr = new TypeWriter(content, elements, 20, 100);
       tr.type();
     </script>
 </body>
