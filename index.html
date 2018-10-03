@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Martin Nikolov: personal page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @font-face {
+      font-family: 'Raleway';
+      src: url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      /* height: 100vh; */
+      background: #000 url('./personal-background.jpg') no-repeat center center / cover;
+      color: #ccc;
+      text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+      overflow-x: hidden;
+      background-size: 100% 100%;
+    }
+    h1 {
+      font-size: 7vw;
+    }
+    h1 a {
+      text-decoration: none;
+      color: #ccc;
+    }
+    h1 a:hover {
+      text-decoration: none;
+      color: #ccc;
+    }
+    h2 {
+      font-size: 2.6vw;
+    }
+    h3 {
+      font-size: 1.6vw;
+    }
+    li {
+      font-size: 1.2vw;
+      list-style: none;
+    }
+    .cursor::after {
+      content: '|';
+      color: white;
+    }
+    #personal-image {
+      position: fixed;
+      top: 2rem;
+      right: 3rem;
+      width: 20vw;
+      height: 28vw;
+      border: 0 solid #222;
+      border-radius: 20px;
+      box-shadow: 0 0 2rem 1rem #222;
+    }
+    .fa-github {
+      font-size: 6vw;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="personal-image" src="./marto.jpg" alt="Martin Nikolov-web developer">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-9">
+        <h1 class="text-center mt-5"><a href="https://github.com/MartinPavlinovNikolov">Martin Nik<i class="fa fa-github"></i>lov</a></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-9">
+        <h2 class="text-center" data-writter-0>&nbsp;</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <h3 class="border-bottom text-center" data-writter-1>&nbsp;</h3>
+        <ul>
+          <li data-writter-2>&nbsp;</li>
+          <li data-writter-3>&nbsp;</li>
+          <li data-writter-4>&nbsp;</li>
+          <li data-writter-5>&nbsp;</li>
+          <li data-writter-6>&nbsp;</li>
+          <li data-writter-7>&nbsp;</li>
+          <li data-writter-8>&nbsp;</li>
+          <li data-writter-9>&nbsp;</li>
+          <li data-writter-10>&nbsp;</li>
+          <li data-writter-11>&nbsp;</li>
+        </ul>
+      </div>
+
+      <div class="col-3">
+        <h3 class="border-bottom text-center" data-writter-12>&nbsp;</h3>
+        <ul>
+          <li data-writter-13>&nbsp;</li>
+          <li data-writter-14>&nbsp;</li>
+          <li data-writter-15>&nbsp;</li>
+          <li data-writter-16>&nbsp;</li>
+          <li data-writter-17>&nbsp;</li>
+          <li data-writter-18>&nbsp;</li>
+          <li data-writter-19>&nbsp;</li>
+          <li data-writter-20>&nbsp;</li>
+          <li data-writter-21>&nbsp;</li>
+        </ul>
+      </div>
+
+      <div class="col-3">
+        <h3 class="border-bottom text-center" data-writter-22>&nbsp;</h3>
+        <ul>
+          <li data-writter-23>&nbsp;</li>
+          <li data-writter-24>&nbsp;</li>
+          <li data-writter-25>&nbsp;</li>
+          <li data-writter-26>&nbsp;</li>
+          <li data-writter-27>&nbsp;</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+    <script>
+      const content = [
+        'Full-Stack Web Developer',
+        'Skills:',
+        '- Starting to develop',
+        ' at December 2015.',
+        '- Team player developer.',
+        '- Good understanding of',
+        ' Design Patherns.',
+        '- Favorite OS:',
+        ' linux(ubuntu-16).',
+        '- Fallowing best practices',
+        '(S.O.L.I.D, KISS, etc... ).',
+        '- TDD.',
+        'Favorite technologies:',
+        '- Apache2.',
+        '- MySQL.',
+        '- js.',
+        '- es6.',
+        '- php5.',
+        '- php7.',
+        '- HTML.',
+        '- CSS.',
+        '- GIT.',
+        'Favorite frameworks:',
+        '- Laravel-5.',
+        '- jQuery.',
+        '- Vue.',
+        '- Bootstrap 3.',
+        '- Bootstrap 4.'
+      ];
+
+      const elements = [
+        document.querySelectorAll('[data-writter-0]')[0],
+        document.querySelectorAll('[data-writter-1]')[0],
+        document.querySelectorAll('[data-writter-2]')[0],
+        document.querySelectorAll('[data-writter-3]')[0],
+        document.querySelectorAll('[data-writter-4]')[0],
+        document.querySelectorAll('[data-writter-5]')[0],
+        document.querySelectorAll('[data-writter-6]')[0],
+        document.querySelectorAll('[data-writter-7]')[0],
+        document.querySelectorAll('[data-writter-8]')[0],
+        document.querySelectorAll('[data-writter-9]')[0],
+        document.querySelectorAll('[data-writter-10]')[0],
+        document.querySelectorAll('[data-writter-11]')[0],
+        document.querySelectorAll('[data-writter-12]')[0],
+        document.querySelectorAll('[data-writter-13]')[0],
+        document.querySelectorAll('[data-writter-14]')[0],
+        document.querySelectorAll('[data-writter-15]')[0],
+        document.querySelectorAll('[data-writter-16]')[0],
+        document.querySelectorAll('[data-writter-17]')[0],
+        document.querySelectorAll('[data-writter-18]')[0],
+        document.querySelectorAll('[data-writter-19]')[0],
+        document.querySelectorAll('[data-writter-20]')[0],
+        document.querySelectorAll('[data-writter-21]')[0],
+        document.querySelectorAll('[data-writter-22]')[0],
+        document.querySelectorAll('[data-writter-23]')[0],
+        document.querySelectorAll('[data-writter-24]')[0],
+        document.querySelectorAll('[data-writter-25]')[0],
+        document.querySelectorAll('[data-writter-26]')[0],
+        document.querySelectorAll('[data-writter-27]')[0]
+      ];
+
+      const TypeWriter = function(content, elements, time_between_characters, dellay_between_words){
+        this.content = content;
+        this.elements = elements;
+        this.time_between_characters = time_between_characters;
+        this.dellay_between_words = dellay_between_words;
+      }
+
+      TypeWriter.prototype.type = function(){
+
+        this.addWord(0);
+
+      }
+
+      TypeWriter.prototype.addWord = function(index){
+
+        if(index < this.elements.length){
+          setTimeout(()=>{
+            this.addChar(index, 0);
+          }, this.dellay_between_words);
+        }
+      }
+
+      TypeWriter.prototype.addChar = function(index, i){
+        if(this.elements[index].innerText.length <= this.content[index].length){
+          setTimeout(()=>{
+            console.log(this.elements[index].innerText);
+            if(this.content[index].charAt(i) === ' '){
+              this.elements[index].innerText = this.elements[index].innerText + '\u00A0';
+              this.elements[index].classList.add('cursor');
+              this.addChar(index, i+1);
+            }else{
+              this.elements[index].innerText = this.elements[index].innerText + this.content[index].charAt(i);
+              this.elements[index].classList.add('cursor');
+              this.addChar(index, i+1);
+            }
+          }, this.time_between_characters);
+        }else if(index < this.elements.length){
+          this.elements[index].classList.remove('cursor');
+          this.elements[index+1].classList.add('cursor');
+          this.addWord(index+1);
+        }
+      }
+
+      const tr = new TypeWriter(content, elements, 50, 100);
+      tr.type();
+    </script>
+</body>
+</html>
