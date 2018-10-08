@@ -15,172 +15,163 @@
     body {
       font-family: 'Raleway', sans-serif;
       font-style: italic;
-      color: #ccc;
+      color: #54e8f3b3;
       overflow-x: hidden;
       background-size: 100% 100%;
-      background-color: #000;
+      background-color: #817381;
     }
     h1 {
       font-size: 7vw;
+      text-shadow: 0 0 6px #000, 0 0 10px #000;
     }
-    h1 a {
+    h1 a, h1 a:hover {
       text-decoration: none;
-      color: #ccc;
-    }
-    h1 a:hover {
-      text-decoration: none;
-      color: #ccc;
+      color: #54e8f3b3;
+      text-shadow: 0 0 6px #000, 0 0 10px #000;
     }
     h2 {
-      font-size: 2.6vmax;
-    }
-    h3 {
       font-size: 1.6vmax;
+      text-shadow: 0 0 6px #000, 0 0 10px #000;
     }
-    li {
-      font-size: 1.2vmax;
-      list-style: none;
+    #main {
+      padding: 0;
+      height: 60vh;
+      overflow-y: scroll;
+      background-color: #000;
+      border: 10px solid #54e8f3b3;
+      border-radius: 5px;
+      max-height: 60vw;
+    }
+    #main:focus {
+      outline: 0;
+    }
+    #main p {
+      font-size: 1vmax;
+      padding: 0;
+      margin: 0;
+    }
+    #profile-img {
+      border-color: #54e8f3b3;
+      border-radius: 50%;
     }
     .cursor::after {
       content: '|';
-      color: white;
-    }
-    #personal-image {
-      position: fixed;
-      top: 2rem;
-      right: 6rem;
-      width: 8vmax;
-      height: 10vmax;
-      border: 0 solid #222;
-      border-radius: 20px;
-      box-shadow: 0 0 2rem 1rem #222;
-    }
-    #background-image {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vmax;
-      height: 80vmin;
-      z-index: -1;
-      filter: blur(1.6px);
+      color: #54e8f3b3;
+      border: 1px solid #54e8f3b3;
+      background-color: #54e8f3b3;
     }
     .fa, .mb-5 {
-      font-size: 3rem;
+      font-size: 2rem;
+      text-shadow: 0 0 6px #000, 0 0 10px #000;
     }
     .github-o {
       font-size: 5vw;
-    }
-    .footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-    .small-terminal, .big-terminal {
-      background-color: #00000080;
-      padding: 1vw;
-    }
-    .small-terminal {
-      min-height: 4vh;
-    }
-    .big-terminal {
-      min-height: 40vh;
     }
   </style>
 </head>
 <body>
 
-  <img id="personal-image" src="./marto.jpg" alt="Martin Nikolov-web developer">
-  <img id="background-image" src="./personal-background.jpg" alt="Martin Nikolov-web developer">
 
   <div class="container-fluid">
 
     <div class="row">
-      <div class="col-9">
-        <h1 class="text-center mt-5"><a href="https://github.com/MartinPavlinovNikolov">Martin Nik<i class="fa fa-github github-o"></i>lov</a></h1>
+      <div class="col-12 col-md-10">
+
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center mt-5"><a href="https://github.com/MartinPavlinovNikolov">Martin Nik<i class="fa fa-github github-o"></i>lov</a></h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Full-Stack Web Developer</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8 offset-2" id="main" tabindex="0">
+            <p class="text-success" data-writter-0>marto@dev:~$</p>
+            <p data-writter-1>&nbsp;</p>
+            <p data-writter-2>&nbsp;</p>
+            <p data-writter-3>&nbsp;</p>
+            <p data-writter-4>&nbsp;</p>
+            <p data-writter-5>&nbsp;</p>
+            <p data-writter-6>&nbsp;</p>
+            <p data-writter-7>&nbsp;</p>
+            <p data-writter-8>&nbsp;</p>
+            <p data-writter-9>&nbsp;</p>
+            <p data-writter-10>&nbsp;</p>
+            <p data-writter-11>&nbsp;</p>
+            <p class="text-success" data-writter-12>&nbsp;</p>
+            <p data-writter-13>&nbsp;</p>
+            <p data-writter-14>&nbsp;</p>
+            <p data-writter-15>&nbsp;</p>
+            <p data-writter-16>&nbsp;</p>
+            <p data-writter-17>&nbsp;</p>
+            <p data-writter-18>&nbsp;</p>
+            <p data-writter-19>&nbsp;</p>
+            <p data-writter-20>&nbsp;</p>
+            <p data-writter-21>&nbsp;</p>
+            <p data-writter-22>&nbsp;</p>
+            <p data-writter-23>&nbsp;</p>
+            <p data-writter-24>&nbsp;</p>
+            <p data-writter-25>&nbsp;</p>
+            <p class="text-success" data-writter-26>&nbsp;</p>
+            <p data-writter-27>&nbsp;</p>
+            <p data-writter-28>&nbsp;</p>
+            <p data-writter-29>&nbsp;</p>
+            <p data-writter-30>&nbsp;</p>
+            <p data-writter-31>&nbsp;</p>
+            <p data-writter-32>&nbsp;</p>
+            <p data-writter-33>&nbsp;</p>
+            <p class="text-success" data-writter-34>&nbsp;</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-2">
+        <div class="row">
+          <div class="col-6 offset-3 col-md-12 offset-md-0">
+            <img id="profile-img" class="img-fluid rounded-circle img-thumbnail mt-5" src="./profile-img.jpg" alt="Martin Nikolov-web developer">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-sm-6  col-md-12 text-center mt-3 pl-0">
+            <a href="https://www.facebook.com/azzonlipro"><i class="fa fa-facebook"></i></a>
+          </div>
+          <div class="col-3 col-sm-6  col-md-12 text-center mt-3  pl-0  pl-0">
+            <a href="mailto:Martin_Nikolov.89@abv.bg"><i class="fa fa-envelope"></i></a>
+          </div>
+            <div class="col-3 col-sm-6  col-md-12  text-center mt-3  pl-0">
+          <a href="https://github.com/MartinPavlinovNikolov"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="col-3 col-sm-6 col-md-12  text-center mt-3  pl-0">
+            <a href="https://linkedin.com/in/martin-nikolov-8a4823165"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center" data-writter-0>&nbsp;</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-4">
-        <h3 class="border-bottom text-center small-terminal" data-writter-1>&nbsp;</h3>
-        <ul class="big-terminal">
-          <li data-writter-2>&nbsp;</li>
-          <li data-writter-3>&nbsp;</li>
-          <li data-writter-4>&nbsp;</li>
-          <li data-writter-5>&nbsp;</li>
-          <li data-writter-6>&nbsp;</li>
-          <li data-writter-7>&nbsp;</li>
-          <li data-writter-8>&nbsp;</li>
-          <li data-writter-9>&nbsp;</li>
-          <li data-writter-10>&nbsp;</li>
-          <li data-writter-11>&nbsp;</li>
-          <li data-writter-12>&nbsp;</li>
-        </ul>
-      </div>
-
-      <div class="col-4">
-        <h3 class="border-bottom text-center small-terminal" data-writter-13>&nbsp;</h3>
-        <ul class="big-terminal">
-          <li data-writter-14>&nbsp;</li>
-          <li data-writter-15>&nbsp;</li>
-          <li data-writter-16>&nbsp;</li>
-          <li data-writter-17>&nbsp;</li>
-          <li data-writter-18>&nbsp;</li>
-          <li data-writter-19>&nbsp;</li>
-          <li data-writter-20>&nbsp;</li>
-          <li data-writter-21>&nbsp;</li>
-          <li data-writter-22>&nbsp;</li>
-          <li data-writter-23>&nbsp;</li>
-          <li data-writter-24>&nbsp;</li>
-          <li data-writter-25>&nbsp;</li>
-        </ul>
-      </div>
-
-      <div class="col-4">
-        <h3 class="border-bottom text-center small-terminal" data-writter-26>&nbsp;</h3>
-        <ul class="big-terminal">
-          <li data-writter-27>&nbsp;</li>
-          <li data-writter-28>&nbsp;</li>
-          <li data-writter-29>&nbsp;</li>
-          <li data-writter-30>&nbsp;</li>
-          <li data-writter-31>&nbsp;</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="row footer">
-      <div class="col-3 text-center mb-3"><a href="https://www.facebook.com/azzonlipro"><i class="fa fa-facebook"></i></a></div>
-      <div class="col-3 text-center mb-3"><a href="mailto:Martin_Nikolov.89@abv.bg"><i class="fa fa-envelope"></i></a></div>
-      <div class="col-3 text-center mb-3"><a href="https://github.com/MartinPavlinovNikolov"><i class="fa fa-github"></i></a></div>
-      <div class="col-3 text-center mb-3"><a href="https://linkedin.com/in/martin-nikolov-8a4823165"><i class="fa fa-linkedin"></i></a></div>
-    </div>
 
   </div>
 
     <script>
+      document.getElementById('main').focus();
       const content = [
-        'Full-Stack Web Developer',
-        'Skills:',
+        ' ls -a --one-by-one MY-SKILLS',
         '- Developer since 2015.',
         '- Affinity for learning.',
         '- Great team player.',
-        '- Good understanding of',
-        ' design patterns.',
+        '- Good understanding of design patterns.',
         '- Favorite OS:',
         ' linux(ubuntu-16).',
         '- Following best practices',
         '(S.O.L.I.D, KISS, etc... ).',
         '- TDD.',
         '- GIT workflow.',
-        'Favorite technologies:',
+        ' ',
+        'marto@dev:~$ ls -a --one-by-one FAVORITE-TEHNOLOGIES',
         '- Apache2.',
         '- MySQL.',
         '- composer.',
@@ -193,12 +184,14 @@
         '- HTML.',
         '- CSS.',
         '- GIT.',
-        'Favorite frameworks:',
+        ' ',
+        'marto@dev:~$ ls -a --one-by-one FAVORITE-FRAMEWORKS',
         '- Laravel-5.',
         '- jQuery.',
         '- Vue.',
         '- Bootstrap 3.',
-        '- Bootstrap 4.'
+        '- Bootstrap 4.',
+        'marto@dev:~$'
       ];
 
       const elements = [
@@ -242,10 +235,18 @@
         this.time_between_characters = time_between_characters;
         this.dellay_between_words = dellay_between_words;
         this.cursor_is_visible = false;
+        this.is_start_typeing = true;
+        this.iterate_over_time = 0;
+        this.animation_is_done = false;
       }
 
       TypeWriter.prototype.type = function(){
-        this.addWord(0);
+        if(this.is_start_typeing === true){
+          this.is_start_typeing = false;
+          this.toggleCursor(elements[0]);
+        }else{
+          this.addWord(0);
+        }
       }
 
       TypeWriter.prototype.addWord = function(index){
@@ -258,7 +259,7 @@
       }
 
       TypeWriter.prototype.addChar = function(index, i){
-        if(this.elements[index].innerText.length <= this.content[index].length){
+        if(this.content[index] !== undefined && i <= this.content[index].length){
           setTimeout(()=>{
             if(this.content[index].charAt(i) === ' '){
               this.elements[index].innerText = this.elements[index].innerText + '\u00A0';
@@ -273,21 +274,30 @@
         }else if(index < this.elements.length && this.elements[index+1] !== undefined){
           this.elements[index].classList.remove('cursor');
           this.elements[index+1].classList.add('cursor');
+          if(index >= 15){
+            document.getElementById('main').scrollTop += 21;
+          }
           this.addWord(index+1);
         }else{
+          this.animation_is_done = true;
           this.toggleCursor(this.elements[index]);
         }
       }
 
       TypeWriter.prototype.toggleCursor = function(element){
-        if(this.cursor_is_visible){
+        if(this.iterate_over_time === 5 && this.animation_is_done === false){
+          this.iterate_over_time = 0;
+          this.type();
+        }else if(this.cursor_is_visible){
           setTimeout(()=>{
+            this.iterate_over_time++;
             element.classList.remove('cursor');
             this.cursor_is_visible = false;
             this.toggleCursor(element);
           }, 500);
         }else{
           setTimeout(()=>{
+            this.iterate_over_time++;
             element.classList.add('cursor');
             this.cursor_is_visible = true;
             this.toggleCursor(element);
@@ -295,7 +305,7 @@
         }
       }
 
-      const tr = new TypeWriter(content, elements, 40, 400);
+      const tr = new TypeWriter(content, elements, 10, 100);
       tr.type();
     </script>
 </body>
