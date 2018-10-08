@@ -20,10 +20,52 @@
       background-size: 100% 100%;
       background-color: #817381;
     }
+    .drop {
+      opacity: .9;
+      width: 35px;
+      height: 35px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid white;
+      border: 1px solid black;
+      border-radius: 50%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      background-color: white;
+      z-index: -1;
+      -webkit-animation:spin 8s linear;
+      -moz-animation:spin 8s linear;
+      animation:spin 8s linear;
+    }
+
+    @-moz-keyframes spin { 
+      100% { 
+        -moz-transform: translateY(600px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    
+    @-webkit-keyframes spin { 
+      100% {
+        -webkit-transform: translateY(600px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    
+    @keyframes spin {
+      100% {
+        -webkit-transform: translateY(600px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
     h1 {
       font-size: 7vw;
       text-shadow: 0 0 6px #000, 0 0 10px #000;
     }
+
     h1 a, h1 a:hover {
       text-decoration: none;
       color: #54e8f3b3;
@@ -280,6 +322,7 @@
           this.addWord(index+1);
         }else{
           this.animation_is_done = true;
+          makeRain();
           this.toggleCursor(this.elements[index]);
         }
       }
@@ -305,7 +348,39 @@
         }
       }
 
-      const tr = new TypeWriter(content, elements, 10, 100);
+      const RainingCloud = function(){
+        this.width = window.outerWidth;
+        this.height = window.outerHeight;
+      }
+
+      RainingCloud.prototype.rand = function(from, to){
+        return Math.floor(Math.random()*(to-from+1)+from);
+      }
+
+      RainingCloud.prototype.generateIcon = function(){
+        var icon = document.createElement("div");
+        icon.innerText = ' ';
+        icon.classList.add('drop');
+        icon.style.backgroundImage = `url("./${this.rand(1, 16)}.png")`;
+        icon.style.left = this.rand(80, this.width - 80)+'px';
+        icon.style.top = '-50px';
+
+        document.getElementsByTagName('body')[0].appendChild(icon);
+      }
+
+      function makeRain(){
+        setInterval(function(){
+          new RainingCloud().generateIcon();
+          let elements = document.querySelectorAll('.drop');
+          elements.forEach(function(el){
+            if(el.top >= window.outerHeight){
+              el.parentNode.removeChild(el);
+            }
+          });
+        }, 250);
+      }
+
+      const tr = new TypeWriter(content, elements, 1, 1);
       tr.type();
     </script>
 </body>
